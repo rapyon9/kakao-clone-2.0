@@ -1,9 +1,13 @@
+/* font */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* style */
 @import "reset.css";
 @import "variables.css";
 
 /* components */
 @import "components/status-bar.css";
+@import "components/nav-bar.css";
 
 /* screens */
 @import "screens/login.css";
