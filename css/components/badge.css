@@ -8,3 +8,11 @@
   align-items: center;
   color: white;
 }
+
+.point {
+  display: flex;
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+}
