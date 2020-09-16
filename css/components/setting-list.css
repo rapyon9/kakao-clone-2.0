@@ -1,0 +1,22 @@
+.setting-component {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.setting-component__column:last-child {
+  margin-left: auto;
+  font-size: 18px;
+  color: var(--kakaoText);
+}
+
+.setting-component__column i {
+  opacity: 0.8;
+  margin-right: 10px;
+}
+
+.setting-component__column span {
+  margin-right: 5px;
+}
