@@ -1,14 +1,26 @@
+.setting-list {
+  border-bottom: var(--main-border);
+}
+
+.setting-list:first-child {
+  margin-bottom: 20px;
+}
+
 .setting-component {
   display: flex;
   align-items: center;
   padding: 20px 0px;
-  font-size: 20px;
+  font-size: 18px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.setting-component:last-child {
+  padding-bottom: 40px;
 }
 
 .setting-component__column:last-child {
   margin-left: auto;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--kakaoText);
 }
 
@@ -19,4 +31,13 @@
 
 .setting-component__column span {
   margin-right: 5px;
+}
+
+.setting-component__column span i {
+  font-size: 10px;
+  background-color: tomato;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  color: white;
 }
