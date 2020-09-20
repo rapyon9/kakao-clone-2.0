@@ -1,4 +1,4 @@
-.badge {
+.badge__chat {
   background-color: tomato;
   width: 30px;
   height: 30px;
@@ -7,4 +7,25 @@
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+.badge__new {
+  font-size: 8px;
+  font-weight: 600;
+  background-color: tomato;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.badge__point {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 3px;
+  display: flex;
 }

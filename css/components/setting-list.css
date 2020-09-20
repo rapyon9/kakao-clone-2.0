@@ -33,11 +33,6 @@
   margin-right: 5px;
 }
 
-.setting-component__column span i {
-  font-size: 10px;
-  background-color: tomato;
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  color: white;
+.setting-component__column {
+  display: flex;
 }
