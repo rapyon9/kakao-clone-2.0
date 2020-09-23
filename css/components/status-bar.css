@@ -1,9 +1,13 @@
 .status-bar {
+  position: sticky;
+  top: 0px;
+  background-color: inherit;
   width: 100%;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   padding: 5px 3px;
+  z-index: 3;
 }
 .status-bar__column {
   width: 33%;
