@@ -24,3 +24,27 @@
   color: var(--kakaoText);
   font-size: 15px;
 }
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--kakaoYellow);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  font-size: 100px;
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 1.5s;
+}

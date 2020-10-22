@@ -95,6 +95,7 @@
 .reply__column:last-child {
   width: 90%;
   padding: 0px 5px;
+  position: relative;
 }
 .reply__column {
   display: flex;
@@ -108,13 +109,13 @@
 }
 
 .reply input {
+  padding: 0px 10px;
   font-size: 14px;
   width: 100%;
   height: 40px;
   border: var(--main-border);
   border-radius: 20px;
   background-color: var(--kakaoGray);
-  position: relative;
 }
 
 .reply__column:last-child button {
@@ -134,8 +135,11 @@
   font-size: 25px;
 }
 
-.reply__column:last-child i,
-.reply__column:last-child button {
+.reply__contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
-  right: 15px;
+  right: 8px;
+  width: 75px;
 }
