@@ -117,3 +117,22 @@
 .open-post__heart-count span {
   margin-left: 5px;
 }
+
+@keyframes heartBeat {
+  0% {
+    transform: none;
+    color: white;
+  }
+  50% {
+    transform: scale(2);
+    color: tomato;
+  }
+  100% {
+    transform: none;
+    color: white;
+  }
+}
+
+.open-post__heart-count:hover i {
+  animation: heartBeat 1s linear infinite;
+}

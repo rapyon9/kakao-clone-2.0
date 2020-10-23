@@ -16,3 +16,19 @@
 .screen-header__icons span {
   margin-left: 20px;
 }
+
+@keyframes scaleIcon {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.screen-header__icons i:hover {
+  animation: scaleIcon 1s ease-in-out infinite;
+}
