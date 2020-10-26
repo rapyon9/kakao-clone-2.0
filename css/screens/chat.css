@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 1100vh;
+  height: 150vh;
 }
 
 #chat-screen .alt-header {
@@ -23,12 +23,16 @@
   border-radius: 16px;
   font-size: 14px;
   margin-bottom: 20px;
+  animation: fadeIn_up 1s linear;
 }
 
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 20px;
+  transform: translateX(-200px);
+  animation: appearAnimation 1s ease-in-out forwards;
+  animation-delay: 2s;
 }
 
 .message-row img {
@@ -64,6 +68,9 @@
 
 .message-row--own {
   justify-content: flex-end;
+  transform: translateX(200px);
+  animation: appearAnimation 1s ease-in-out forwards;
+  animation-delay: 3s;
 }
 
 .message-row--own .message__box {
@@ -142,4 +149,28 @@
   position: absolute;
   right: 8px;
   width: 75px;
+}
+
+@keyframes fadeIn_up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appearAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.reply:focus-within .reply__column:first-child {
+  display: none;
 }

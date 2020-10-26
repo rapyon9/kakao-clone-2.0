@@ -39,7 +39,7 @@
   animation: notificationAnimation 2s linear infinite;
 }
 
-@keyframes appearBtnAnimation {
+@keyframes appearAnimation {
   from {
     opacity: 0;
   }
@@ -52,9 +52,8 @@
 .nav__btn {
   transform: translateY(80px);
   opacity: 0;
-  animation: appearBtnAnimation 1s linear forwards;
+  animation: appearAnimation 1s linear forwards;
 }
-
 .nav__btn:nth-child(2) {
   animation-delay: 0.2s;
 }
